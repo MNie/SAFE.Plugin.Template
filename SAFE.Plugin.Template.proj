@@ -11,7 +11,7 @@
         <PackageType>Template</PackageType>
         <NoBuild>true</NoBuild>
         <IncludeBuildOutput>false</IncludeBuildOutput>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
     <PropertyGroup>
         <ExcludeFromPackage>
@@ -26,8 +26,8 @@
         </ExcludeFromPackage>
 </PropertyGroup>
     <ItemGroup>
-        <Content Include="Content/**/*" Exclude="$(ExcludeFromPackage)" >
-                <PackagePath>Content\</PackagePath>
+        <Content Include="src/Content/**/*" Exclude="$(ExcludeFromPackage)" >
+                <PackagePath>src\Content\</PackagePath>
         </Content>
     </ItemGroup>
 </Project>
