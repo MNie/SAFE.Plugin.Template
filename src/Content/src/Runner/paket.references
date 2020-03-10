@@ -1,0 +1,7 @@
+FSharp.Core
+Fake.Core.ReleaseNotes
+Fake.Core.Target
+Fake.DotNet.Cli
+Fake.IO.FileSystem
+Thoth.Json.Net
+SAFE

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <Authors>Michał Niegrzybowski</Authors>
+    <PackageId>Safe.Template.Plugin</PackageId>
+    <Product>Safe.Template.Plugin</Product>
+    <Description>Custom plugin for SAFE stack.</Description>
+    <Copyright>Michał Niegrzybowski</Copyright>
+    <PackageTags>SAFE, SAFE-Plugin, Plugin</PackageTags>
+    <DebugType>Full</DebugType>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Plugin.fs" />
+    <None Include="paket.references" />
+  </ItemGroup>
+</Project>

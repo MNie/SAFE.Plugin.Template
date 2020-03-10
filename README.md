@@ -1,0 +1,1 @@
+# SAFE Plugin Template [POC]

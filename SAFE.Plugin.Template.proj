@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <Description>SAFE Plugin Stack Template</Description>
+        <Authors>Michal Niegrzybowski</Authors>
+        <PackageProjectUrl>https://github.com/SAFE-Stack/SAFE-Plugin-template</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/SAFE-Stack/SAFE-Plugin-template/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/SAFE-Stack/SAFE-Plugin-template/master/safe-logo.png</PackageIconUrl>
+        <RepositoryUrl>https://github.com/SAFE-Stack/SAFE-Plugin-template.git</RepositoryUrl>
+        <PackageTags>template;fsharp;safe</PackageTags>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <PackageType>Template</PackageType>
+        <NoBuild>true</NoBuild>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <TargetFramework>netstandard2.1</TargetFramework>
+    </PropertyGroup>
+    <PropertyGroup>
+        <ExcludeFromPackage>
+**/.fable/**/*;
+**/.fake/**/*;
+**/obj/**/*;
+**/bin/**/*;
+**/packages/**/*;
+**/paket-files/**/*;
+**/node_modules/**/*;
+**/src/Core/public/js/**/*;
+        </ExcludeFromPackage>
+</PropertyGroup>
+    <ItemGroup>
+        <Content Include="Content/**/*" Exclude="$(ExcludeFromPackage)" >
+                <PackagePath>Content\</PackagePath>
+        </Content>
+    </ItemGroup>
+</Project>

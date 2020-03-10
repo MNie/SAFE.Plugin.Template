@@ -1,0 +1,114 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Michał Niegrzybowski",
+    "classifications": [
+        "SAFE",
+        "SAFE-Stack",
+        "SAFE-Plugin"
+    ],
+    "name": "SAFE-Stack Plugin v0.0.1-alpha001",
+    "tags": {
+        "language": "F#",
+        "type": "project"
+    },
+    "identity": "SAFE.Plugin.Template",
+    "shortName": "SAFEPlugin",
+    "sourceName": "SAFE.Plugin.Template",
+    "symbols": {
+        "createdate": {
+            "type": "generated",
+            "generator": "now",
+            "parameters": {
+              "format": "yyyy-MM-dd"
+            },
+            "replaces":"1970-01-01"
+        },
+        "target": {
+            "type": "parameter",
+            "datatype": "choice",
+            "defaultValue": "shared",
+            "choices": [
+                {
+                    "choice": "shared",
+                    "description": "plugin made for shared part of an application."
+                },
+                {
+                    "choice": "client",
+                    "description": "plugin made for client part of an application."
+                },
+                {
+                    "choice": "server",
+                    "description": "plugin made for server part of an application."
+                }
+            ]
+        },
+        "shared": {
+            "type": "computed",
+            "value": "(target == \"shared\")"
+        },
+        "server": {
+            "type": "computed",
+            "value": "(target == \"server\")"
+        },
+        "client": {
+            "type": "computed",
+            "value": "(target == \"client\")"
+        }
+    },
+    "sources": [
+        {
+            "exclude": [
+                "**/.template.config/**/*"
+            ],
+            "modifiers": []
+        }
+    ],
+    "SpecialCustomOperations": {
+        "**/paket.*": {
+            "operations": [
+                {
+                    "type": "conditional",
+                    "configuration": {
+                        "if": [
+                            "#if"
+                        ],
+                        "else": [
+                            "#else"
+                        ],
+                        "elseif": [
+                            "#elseif"
+                        ],
+                        "endif": [
+                            "#endif"
+                        ],
+                        "trim": "true",
+                        "wholeLine": "true"
+                    }
+                }
+            ]
+        },
+        "**/*.fs*": {
+            "operations": [
+                {
+                    "type": "conditional",
+                    "configuration": {
+                        "if": [
+                            "#if"
+                        ],
+                        "else": [
+                            "#else"
+                        ],
+                        "elseif": [
+                            "#elseif"
+                        ],
+                        "endif": [
+                            "#endif"
+                        ],
+                        "trim": "true",
+                        "wholeLine": "true"
+                    }
+                }
+            ]
+        }
+    }
+}
