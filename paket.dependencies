@@ -1,5 +1,7 @@
 group Build
     storage: none
+    source C:\git\SAFE\nupkg
+    source ~/Desktop/Repositories/github/SAFE/nupkg
     source https://api.nuget.org/v3/index.json
 
     nuget FSharp.Core
@@ -9,10 +11,13 @@ group Build
     nuget Fake.DotNet.Paket
     nuget Fake.IO.FileSystem
     nuget Fake.Tools.Git
+    nuget SAFE
 
 group Tests
     framework: netcoreapp3.0
     storage: none
+    source C:\git\SAFE\nupkg
+    source ~/Desktop/Repositories/github/SAFE/nupkg
     source https://api.nuget.org/v3/index.json
 
     nuget System.Net.Http

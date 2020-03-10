@@ -6,7 +6,7 @@
         "SAFE-Stack",
         "SAFE-Plugin"
     ],
-    "name": "SAFE-Stack Plugin v0.0.1-alpha001",
+    "name": "SAFE-Stack Plugin v0.0.1",
     "tags": {
         "language": "F#",
         "type": "project"

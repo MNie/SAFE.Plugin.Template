@@ -1,4 +1,5 @@
 source C:\git\SAFE\nupkg
+source ~/Desktop/Repositories/github/SAFE/nupkg
 source https://api.nuget.org/v3/index.json
 framework: netcoreapp3.1, netstandard2.0
 nuget SAFE

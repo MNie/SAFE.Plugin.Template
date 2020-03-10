@@ -5,7 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1</Version>
     <Authors>Michał Niegrzybowski</Authors>
-    <PackageId>Safe.Template.Plugin</PackageId>
+    <PackageId>Safe.Plugin.Template.Plugin</PackageId>
     <Product>Safe.Template.Plugin</Product>
     <Description>Custom plugin for SAFE stack.</Description>
     <Copyright>Michał Niegrzybowski</Copyright>
@@ -19,4 +19,6 @@
     <Compile Include="Plugin.fs" />
     <None Include="paket.references" />
   </ItemGroup>
+
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
