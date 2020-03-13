@@ -1,1 +1,1 @@
-module SAFE.Tests
+module SAFE.Plugin.Template
