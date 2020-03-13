@@ -5,8 +5,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1</Version>
     <Authors>Michał Niegrzybowski</Authors>
-    <PackageId>Safe.Plugin.Template.Plugin</PackageId>
-    <Product>Safe.Template.Plugin</Product>
+    <PackageId>SAFE.Plugin.Template.Plugin</PackageId>
+    <Product>SAFE.Plugin.Template.Plugin</Product>
     <Description>Custom plugin for SAFE stack.</Description>
     <Copyright>Michał Niegrzybowski</Copyright>
     <PackageTags>SAFE, SAFE-Plugin, Plugin</PackageTags>

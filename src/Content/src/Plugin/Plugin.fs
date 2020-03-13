@@ -1,4 +1,4 @@
-namespace SAFE.PluginName.Template
+namespace SAFE.Plugin.Template.Plugin
 
 module SampleModule =
     let sampleMethod () =

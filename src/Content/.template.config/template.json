@@ -15,6 +15,12 @@
     "shortName": "SAFEPlugin",
     "sourceName": "SAFE.Plugin.Template",
     "symbols": {
+        "creator": {
+            "type": "parameter",
+            "datatype": "text",
+            "replaces": "Michał Niegrzybowski",
+            "defaultValue": "Robert Kubica EEEEEEEEE"
+        },
         "createdate": {
             "type": "generated",
             "generator": "now",
